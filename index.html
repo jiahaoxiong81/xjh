@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊嘉浩 - 个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body id="top">
+    <div class="scroll-progress"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#top">熊嘉浩</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#top" class="active">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact" class="cta-button">联系我</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 移动端导航菜单 -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#top">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#skills">技能</a></li>
+            <li><a href="#contact">联系我</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="gradient-text">全栈开发者 & 技术创新者</h1>
+                    <p class="hero-description">专注于创建优雅的数字体验和解决方案</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="primary-button">查看作品</a>
+                        <a href="#contact" class="secondary-button">联系我</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/jiahaoxiong81" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/xjh1138016173" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        👋 你好，我是熊嘉浩，一名热爱编程的开发者。我正在不断学习和探索新的技术，致力于创建优质的软件解决方案。
+                    </p>
+                </div>
+                
+                <div class="experience-section">
+                    <h3>工作经验</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 - 现在</div>
+                            <div class="timeline-content">
+                                <h4>高级开发工程师</h4>
+                                <h5>公司名称</h5>
+                                <ul>
+                                    <li>负责核心产品的架构设计和开发</li>
+                                    <li>带领团队完成多个重要项目</li>
+                                    <li>优化系统性能，提升用户体验</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - 2022</div>
+                            <div class="timeline-content">
+                                <h4>开发工程师</h4>
+                                <h5>公司名称</h5>
+                                <ul>
+                                    <li>参与多个Web应用开发项目</li>
+                                    <li>实现关键功能模块</li>
+                                    <li>编写技术文档和规范</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-section">
+                    <h3>教育背景</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2016 - 2020</div>
+                            <div class="timeline-content">
+                                <h4>计算机科学与技术</h4>
+                                <h5>某某大学</h5>
+                                <p>主修课程：数据结构、算法分析、软件工程、数据库系统</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="featured-section">
+            <h2>精选项目</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="代码编辑器项目">
+                    </div>
+                    <div class="project-content">
+                        <h3>代码编辑器</h3>
+                        <p>一个现代化的在线代码编辑器，支持多种编程语言和实时预览功能</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">了解更多 →</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg" alt="响应式网站项目">
+                    </div>
+                    <div class="project-content">
+                        <h3>响应式网站设计</h3>
+                        <p>一个现代化的响应式网站，适配各种设备的屏幕尺寸</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">了解更多 →</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/07/31/11/31/laptop-2557468_1280.jpg" alt="数据可视化项目">
+                    </div>
+                    <div class="project-content">
+                        <h3>数据可视化平台</h3>
+                        <p>一个强大的数据可视化平台，支持多种图表类型和实时数据更新</p>
+                        <div class="tech-stack">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Express</span>
+                        </div>
+                        <a href="#" class="project-link">了解更多 →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#projects" class="outline-button">查看更多项目</a>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>技术栈</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>前端开发</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                    </ul>
+                </div>
+                <!-- 更多技能类别 -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <!-- 联系部分内容 -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <h3>熊嘉浩</h3>
+                    <p>让我们一起创造精彩</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>导航</h4>
+                        <ul>
+                            <li><a href="#top">首页</a></li>
+                            <li><a href="#about">关于</a></li>
+                            <li><a href="#projects">项目</a></li>
+                            <li><a href="#skills">技能</a></li>
+                            <li><a href="#contact">联系</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>社交媒体</h4>
+                        <ul>
+                            <li><a href="https://github.com/jiahaoxiong81"><i class="fab fa-github"></i> GitHub</a></li>
+                            <li><a href="https://twitter.com/xjh1138016173"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 熊嘉浩. 保留所有权利。</p>
+                <div class="footer-legal">
+                    <a href="/privacy.html">隐私政策</a>
+                    <a href="/terms.html">使用条款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

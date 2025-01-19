@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub - 您的名字</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/github.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- 导航栏内容与其他页面相同 -->
+    </nav>
+
+    <main class="github-container">
+        <section class="github-header">
+            <h1 class="gradient-text">GitHub 项目</h1>
+            <p class="github-intro">探索我的开源贡献和代码仓库</p>
+            
+            <div class="github-stats">
+                <div class="stat-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>公开仓库</h3>
+                    <span class="stat-number" id="public-repos">0</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>获得星标</h3>
+                    <span class="stat-number" id="total-stars">0</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-code"></i>
+                    <h3>贡献次数</h3>
+                    <span class="stat-number" id="total-commits">0</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="github-search">
+            <div class="search-container">
+                <input type="text" id="repo-search" placeholder="搜索仓库...">
+                <div class="filter-tags">
+                    <button class="tag active" data-lang="all">全部</button>
+                    <button class="tag" data-lang="javascript">JavaScript</button>
+                    <button class="tag" data-lang="python">Python</button>
+                    <button class="tag" data-lang="java">Java</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="repositories-grid">
+            <!-- 仓库卡片将通过 JavaScript 动态加载 -->
+            <div class="repo-skeleton">
+                <div class="skeleton-header"></div>
+                <div class="skeleton-body">
+                    <div class="skeleton-line"></div>
+                    <div class="skeleton-line"></div>
+                </div>
+                <div class="skeleton-footer"></div>
+            </div>
+        </section>
+
+        <template id="repo-template">
+            <article class="repo-card">
+                <div class="repo-header">
+                    <h3 class="repo-name"></h3>
+                    <span class="repo-visibility"></span>
+                </div>
+                <p class="repo-description"></p>
+                <div class="repo-meta">
+                    <span class="repo-language">
+                        <span class="language-color"></span>
+                        <span class="language-name"></span>
+                    </span>
+                    <span class="repo-stars">
+                        <i class="fas fa-star"></i>
+                        <span class="stars-count"></span>
+                    </span>
+                    <span class="repo-forks">
+                        <i class="fas fa-code-branch"></i>
+                        <span class="forks-count"></span>
+                    </span>
+                </div>
+                <a href="#" class="repo-link" target="_blank">查看仓库 →</a>
+            </article>
+        </template>
+    </main>
+
+    <footer>
+        <!-- 页脚内容与其他页面相同 -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/github.js"></script>
+</body>
+</html> 

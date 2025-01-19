@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目展示 - 您的名字</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="/">您的名字</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">首页</a></li>
+                <li><a href="/resume.html">简历</a></li>
+                <li><a href="/projects.html">项目</a></li>
+                <li><a href="/github.html">GitHub</a></li>
+                <li><a href="/contact.html" class="cta-button">联系我</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="projects-container">
+        <section class="projects-header">
+            <h1 class="gradient-text">项目展示</h1>
+            <p class="projects-intro">探索我的最新作品和技术实践</p>
+        </section>
+
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="web">Web开发</button>
+            <button class="filter-btn" data-filter="mobile">移动应用</button>
+            <button class="filter-btn" data-filter="other">其他项目</button>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/project1.jpg" alt="项目1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> 访问
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> 源码
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>项目名称</h3>
+                    <p>项目描述和主要功能介绍，使用到的技术栈和解决的问题。</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </article>
+            <!-- 更多项目卡片 -->
+        </div>
+
+        <div class="load-more">
+            <button class="load-more-btn">加载更多</button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- 页脚内容 -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html> 
